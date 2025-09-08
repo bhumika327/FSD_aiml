@@ -1,3 +1,53 @@
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+}
+.header-container {
+    max-width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    border: none;
+    padding: 6px 10px;
+    font-size: 14px;
+    outline: none;
+    width: 200px;
+}
+
+.logo img {
+    height: 40px; /* Adjust height as needed */
+    width: auto;
+    object-fit: contain;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
 .box{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -18,12 +68,14 @@
     background-color: bisque;
 }
 .box2{
-    /* grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;  */
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    
     /* height: 400px;
     width: 300px; */
+    gap : 20px;
+    padding : 10px;
+    display: grid;
     border: 1px dotted black;
     background-color: rgb(192, 255, 246);
 }
@@ -109,4 +161,74 @@
     content: "Lighting solutions";
     font-size: 13px;
     color: #111;
+}
+.box11, .box12, .box13, .box14 {
+    display: flex;
+    flex-direction: column;   /* stack vertically */
+    align-items: flex-start;  /* left align caption */
+    gap: 15px;                 /* little space between image and text */
+}
+    .box21::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: url("https://cdn.pixabay.com/photo/2019/06/05/10/34/mimosa-4253396_1280.jpg") no-repeat center/cover;
+    border-radius: 4px;
+}
+
+.box22::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: url("https://cdn.pixabay.com/photo/2024/05/23/15/11/teddy-8783348_1280.jpg") no-repeat center/cover;
+    border-radius: 4px;
+}
+
+.box23::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: url("https://cdn.pixabay.com/photo/2017/09/13/16/08/cosmetics-2746013_1280.jpg") no-repeat center/cover;
+    border-radius: 4px;
+}
+
+.box24::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: url("https://cdn.pixabay.com/photo/2013/07/30/12/25/bouquet-168831_1280.jpg") no-repeat center/cover;
+    border-radius: 4px;
+}
+.box21::after {
+    content: "Home Decor,Vases & more";
+    font-size: 13px;
+    color: #111;
+}
+
+.box22::after {
+    content: "Plushies, toys & more";
+    font-size: 13px;
+    color: #111;
+}
+
+.box23::after {
+    content: "Makeup Products";
+    font-size: 13px;
+    color: #111;
+}
+
+.box24::after {
+    content: "Flowers Bouquets";
+    font-size: 13px;
+    color: #111;
+}
+.box21, .box22, .box23, .box24 {
+    display: flex;
+    flex-direction: column;   /* stack vertically */
+    align-items: flex-start;  /* left align caption */
+    gap: 15px;                 /* little space between image and text */
 }
