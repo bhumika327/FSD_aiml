@@ -1,0 +1,112 @@
+.box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 400px 600px 200px;
+    border: 1px solid red;
+    background-color: rgb(255, 255, 188);
+}
+.box1{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    
+    /* height: 400px;
+    width: 300px; */
+    gap : 20px;
+    padding : 15px;
+    display: grid;
+    border: 1px dotted black;
+    background-color: bisque;
+}
+.box2{
+    /* grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;  */
+    /* height: 400px;
+    width: 300px; */
+    border: 1px dotted black;
+    background-color: rgb(192, 255, 246);
+}
+.box3{
+    /* height: 400px;
+    width: 300px; */
+    border: 1px dotted black;
+    background-color: rgb(181, 251, 120);
+}
+.box4{
+    /* height: 400px;
+    width: 300px; */
+    border: 1px dotted  black;
+    background-color: rgb(210, 27, 88);
+}
+
+.heading{
+    margin: 10px;
+    grid-column: 1 / -1;
+    font-size: 18px;
+    font-weight: bold;
+}
+.box11, .box12, .box13, .box14 {
+    display: flex;
+    flex-direction: column;   /* stack vertically */
+    align-items: flex-start;  /* left align caption */
+    gap: 15px;                 /* little space between image and text */
+}
+    .box11::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_furnishings_2._SY116_CB555624324_.jpg") no-repeat center/cover;
+    border-radius: 4px;
+}
+
+.box12::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg") no-repeat center/cover;
+    border-radius: 4px;
+}
+
+.box13::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_storage_1._SY116_CB555624324_.jpg") no-repeat center/cover;
+    border-radius: 4px;
+}
+
+.box14::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_lighting_2._SY116_CB555624324_.jpg") no-repeat center/cover;
+    border-radius: 4px;
+}
+.box11::after {
+    content: "Cushion covers, bedsheets & more";
+    font-size: 13px;
+    color: #111;
+}
+
+.box12::after {
+    content: "Figurines, vases & more";
+    font-size: 13px;
+    color: #111;
+}
+
+.box13::after {
+    content: "Home storage";
+    font-size: 13px;
+    color: #111;
+}
+
+.box14::after {
+    content: "Lighting solutions";
+    font-size: 13px;
+    color: #111;
+}
