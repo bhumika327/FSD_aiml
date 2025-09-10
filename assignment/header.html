@@ -7,31 +7,34 @@
     <link rel="stylesheet" href="header.css">
 </head>
 <body>
-     <header>
-        <div class="container header-container">
-           <div class="logo">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo" />
-</div>
-  <div class="search-bar">
-            <input type="text" placeholder="Search products..." />
-            <button type="submit">&#128269;</button> <!-- Unicode magnifying glass -->
-        </div>
+   <!-- Header Start -->
+<header class="header">
+    <div class="header-left">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo" class="logo">
+    </div>
 
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-             
-        <!-- Cart icon -->
-        <div class="cart-icon">
-            <a href="#" title="Cart">&#128722;</a> <!-- Unicode shopping cart -->
+    <div class="header-search">
+        <input type="text" placeholder="Search Amazon Clone" class="search-input">
+        <button class="search-button">🔍</button>
+    </div>
+
+    <div class="header-right">
+        <div class="nav-option">
+            <span class="line-one">Hello, Sign in</span>
+            <span class="line-two">Account & Lists</span>
         </div>
+        <div class="nav-option">
+            <span class="line-one">Returns</span>
+            <span class="line-two">& Orders</span>
         </div>
-    </header>
+        <div class="nav-option cart">
+            🛒
+            <span class="cart-count">0</span>
+        </div>
+    </div>
+</header>
+<!-- Header End -->
+
  <div class="box">
     <div class="box1">
         <div class="heading"><h3>Revamp your home in style</h3></div>
@@ -59,7 +62,61 @@
     <div class="box3">box3</div>
     <div class="box4">box4</div>
  </div>
- 
+ <!-- Footer Start -->
+<footer class="footer">
+    <div class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+        Back to top
+    </div>
+
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Get to Know Us</h4>
+            <ul>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About Amazon</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Amazon Devices</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Make Money with Us</h4>
+            <ul>
+                <li><a href="#">Sell on Amazon</a></li>
+                <li><a href="#">Sell under Amazon Accelerator</a></li>
+                <li><a href="#">Protect & Build Your Brand</a></li>
+                <li><a href="#">Become an Affiliate</a></li>
+                <li><a href="#">Advertise Your Products</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Amazon Payment Products</h4>
+            <ul>
+                <li><a href="#">Amazon Business Card</a></li>
+                <li><a href="#">Shop with Points</a></li>
+                <li><a href="#">Reload Your Balance</a></li>
+                <li><a href="#">Amazon Currency Converter</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Let Us Help You</h4>
+            <ul>
+                <li><a href="#">Amazon and COVID-19</a></li>
+                <li><a href="#">Your Account</a></li>
+                <li><a href="#">Shipping Rates & Policies</a></li>
+                <li><a href="#">Returns & Replacements</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo" class="footer-logo">
+        <p>&copy; 2025 Amazon Clone. All rights reserved.</p>
+    </div>
+</footer>
+<!-- Footer End -->
+
 
 </body>
 </html>
