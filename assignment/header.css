@@ -80,6 +80,32 @@
     font-size: 12px;
     font-weight: bold;
 }
+.sub-nav {
+  background-color: #232f3e; /* Amazon dark navbar color */
+  padding: 8px 20px;
+}
+
+.sub-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* wraps on smaller screens */
+  align-items: center;
+  gap: 35px; /* space between items */
+}
+
+.sub-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.sub-nav ul li a:hover {
+  color: #febd69; /* Amazon yellow highlight on hover */
+}
 
 .box{
     display: grid;
@@ -133,9 +159,9 @@
 }
 .box11, .box12, .box13, .box14 {
     display: flex;
-    flex-direction: column;   /* stack vertically */
-    align-items: flex-start;  /* left align caption */
-    gap: 15px;                 /* little space between image and text */
+    flex-direction: column;  
+    align-items: flex-start;  
+    gap: 15px;                
 }
     .box11::before {
     content: "";
@@ -261,10 +287,12 @@
 }
 .box21, .box22, .box23, .box24 {
     display: flex;
-    flex-direction: column;   /* stack vertically */
-    align-items: flex-start;  /* left align caption */
-    gap: 15px;                 /* little space between image and text */
+    flex-direction: column;  
+    align-items: flex-start;  
+    gap: 15px;                
 }
+
+
 .footer {
     background-color: #232F3E;
     color: white;
