@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Counter App</title>
+<style>
+    #container {
+        height: 400px;
+        width: 300px;
+        background-color: honeydew;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    #logo {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: crimson;
+       margin-top:70px;
+    }
+    h1 {
+       text-align: center;
+       margin-bottom: 200px;
+    }
+    button {
+        margin: 5px;
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    #counterValue {
+        font-size: 24px;
+        margin: 20px 0;
+    }
+</style>
+</head>
+<body>
+<div id="container">
+    <div id="logo"></div>
+    <h1>Counter App</h1>
+    <div id="counterValue">0</div>
+    <button onclick="positive()">Positive</button>
+    <button onclick="negative()">Negative</button>
+</div>
+
+<script>
+    let num = 0;
+
+    function positive() {
+        if (num >= 10) {
+            alert("Value cannot be greater than 10!");
+            return;
+        }
+        num++;
+        document.getElementById("counterValue").innerText = num;
+    }
+
+    function negative() {
+        if (num <= 0) {
+            alert("Value cannot be less than 0!");
+            return;
+        }
+        num--;
+        document.getElementById("counterValue").innerText = num;
+    }
+</script>
+</body>
+</html>
+
