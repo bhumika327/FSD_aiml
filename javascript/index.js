@@ -53,7 +53,7 @@ else if(lang=='c'){
     data=cCompiler();
 }
 else {
-    data=" no compiler running";
+    data=" no compiler available";
 }
 return data;
 }
